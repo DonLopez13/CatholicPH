@@ -1,38 +1,44 @@
+/* General body styling */
 body {
-    font-family: Arial, Vesper Libre;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    font-family: 'Vesper Libre', serif;
+    background-color: white; /* White background */
+    color: black;  /* Default text color (black) for readability */
 }
 
+/* Header styling */
 header {
-    background-color: #333;
-    color: white;
+    background-color: #FFA500; /* Orange background */
+    color: white; /* White text color */
     padding: 1rem;
     text-align: center;
 }
 
+/* Navigation link styling */
 nav a {
-    color: white;
+    color: #FFA500; /* Orange color for links */
     text-decoration: none;
     padding: 0.5rem;
     margin: 0.5rem;
 }
 
 nav a:hover {
-    background-color: #575757;
+    background-color: white; /* White background on hover */
+    color: #FFA500; /* Orange color on hover */
 }
 
+/* Section styling */
 section {
     padding: 20px;
     margin: 10px;
-    background-color: #fff;
+    background-color: white; /* White background for sections */
+    border: 2px solid #FFA500; /* Orange border */
     border-radius: 5px;
 }
 
+/* Footer styling */
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #333;
-    color: white;
+    background-color: #FFA500; /* Orange footer background */
+    color: white; /* White text in footer */
 }
