@@ -1,15 +1,15 @@
 /* General body and text settings */
 body {
     font-family: 'Vesper Libre', serif;
-    background-color: #f7f7f7;
-    color: #333;
+    background-color: white;
+    color: black;
     margin: 0;
     padding: 0;
 }
 
 /* Header section */
 header {
-    background-color: #FFA500;
+    background-color: #FFA500; /* Orange */
     color: white;
     padding: 20px;
     text-align: center;
@@ -44,19 +44,19 @@ section {
 
 section h2 {
     font-size: 1.8rem;
-    color: #333;
+    color: black;
 }
 
 section p {
     font-size: 1rem;
     line-height: 1.6;
-    color: #555;
+    color: black;
 }
 
 /* Footer section */
 footer {
     text-align: center;
-    background-color: #FFA500;
+    background-color: #FFA500; /* Orange */
     color: white;
     padding: 10px;
     position: fixed;
