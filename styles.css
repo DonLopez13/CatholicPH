@@ -1,6 +1,6 @@
 /* General page setup */
 body {
-    font-family: 'Vesper Libre', serif; /* Applying Vesper Libre Regular font */
+    font-family: 'Vesper Libre', serif;
     background-color: white;
     color: black;
     margin: 0;
@@ -32,15 +32,19 @@ nav a:hover {
     background-color: darkorange;
 }
 
-/* Section styles */
-section {
+/* Debate section styles */
+section#debate {
     padding: 20px;
     margin: 20px;
     background-color: #f8f8f8;
 }
 
-section h2 {
+section#debate h2 {
     color: orange;
+}
+
+section#debate p {
+    line-height: 1.6;
 }
 
 /* Footer styles */
