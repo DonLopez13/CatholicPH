@@ -1,16 +1,16 @@
 /* General page setup */
 body {
-    font-family: Vesper Libre, sans-serif;
-    background-color: white;  /* White background */
-    color: black;             /* Black text color */
+    font-family: 'Vesper Libre', serif; /* Applying Vesper Libre Regular font */
+    background-color: white;
+    color: black;
     margin: 0;
     padding: 0;
 }
 
 /* Header styles */
 header {
-    background-color: orange; /* Orange header */
-    color: white;              /* White text in the header */
+    background-color: orange;
+    color: white;
     padding: 10px 0;
     text-align: center;
 }
@@ -22,31 +22,31 @@ header h1 {
 
 /* Navigation styles */
 nav a {
-    color: white;              /* White text for links */
+    color: white;
     text-decoration: none;
     padding: 10px;
     margin: 0 10px;
 }
 
 nav a:hover {
-    background-color: darkorange; /* Hover effect with darker orange */
+    background-color: darkorange;
 }
 
 /* Section styles */
 section {
     padding: 20px;
     margin: 20px;
-    background-color: #f8f8f8; /* Light grey background for sections */
+    background-color: #f8f8f8;
 }
 
 section h2 {
-    color: orange;             /* Orange color for section headings */
+    color: orange;
 }
 
 /* Footer styles */
 footer {
-    background-color: orange;  /* Orange footer */
-    color: white;              /* White text in the footer */
+    background-color: orange;
+    color: white;
     text-align: center;
     padding: 10px 0;
     position: fixed;
