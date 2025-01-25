@@ -1,69 +1,57 @@
-/* General body and text settings */
-body {
-    font-family: 'Vesper Libre', serif;
-    background-color: white;
-    color: black;
+/* General reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* Header section */
+body {
+    font-family: 'Vesper Libre', serif;
+    background-color: white; /* White background */
+    color: black; /* Black text */
+    line-height: 1.6;
+}
+
 header {
-    background-color: #FFA500; /* Orange */
+    background-color: #FF6600; /* Orange header */
     color: white;
     padding: 20px;
     text-align: center;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.5rem;
+    font-size: 3em;
 }
 
-header nav {
-    margin-top: 10px;
-}
-
-header nav a {
+nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 10px;
+    font-size: 1.2em;
 }
 
-header nav a:hover {
+nav a:hover {
     text-decoration: underline;
 }
 
-/* Main content sections */
 section {
     padding: 20px;
-    margin: 20px;
-    background-color: white;
-    border-radius: 8px;
+    margin: 20px 0;
+    background-color: #FFCC00; /* Yellow background for sections */
+    color: black; /* Black text inside sections */
 }
 
-section h2 {
-    font-size: 1.8rem;
-    color: black;
+h2 {
+    color: #FF6600; /* Orange color for headings */
 }
 
-section p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: black;
-}
-
-/* Footer section */
 footer {
-    text-align: center;
-    background-color: #FFA500; /* Orange */
+    background-color: #FF6600; /* Orange footer */
     color: white;
+    text-align: center;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 
 footer p {
-    margin: 0;
+    font-size: 1em;
 }
