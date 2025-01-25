@@ -1,26 +1,23 @@
-/* Applying Vesper Libre font for headers */
-@import url('https://fonts.googleapis.com/css2?family=Vesper+Libre:wght@400;700&display=swap');
-
-/* Body styles */
+/* General body and text settings */
 body {
     font-family: 'Vesper Libre', serif;
-    background-color: white;
-    color: black;
+    background-color: #f7f7f7;
+    color: #333;
     margin: 0;
     padding: 0;
 }
 
-/* Header styles */
+/* Header section */
 header {
-    background-color: orange;
+    background-color: #FFA500;
+    color: white;
     padding: 20px;
     text-align: center;
-    color: white;
 }
 
 header h1 {
-    font-family: 'Vesper Libre', serif;
-    font-weight: 700;
+    margin: 0;
+    font-size: 2.5rem;
 }
 
 header nav {
@@ -29,45 +26,44 @@ header nav {
 
 header nav a {
     color: white;
-    margin: 0 15px;
     text-decoration: none;
-    font-weight: 400;
+    margin: 0 15px;
 }
 
 header nav a:hover {
     text-decoration: underline;
 }
 
-.flag-container {
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-/* Main section styles */
+/* Main content sections */
 section {
     padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
 }
 
-h2, h3 {
-    font-family: 'Vesper Libre', serif;
-    color: orange;
+section h2 {
+    font-size: 1.8rem;
+    color: #333;
 }
 
-/* Links styling */
-a {
-    color: orange;
-    text-decoration: none;
+section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
-/* Footer styles */
+/* Footer section */
 footer {
-    background-color: #333;
-    color: white;
     text-align: center;
-    padding: 15px;
-    margin-top: 20px;
+    background-color: #FFA500;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
 }
