@@ -1,4 +1,4 @@
-/* General reset */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -7,13 +7,13 @@
 
 body {
     font-family: 'Vesper Libre', serif;
-    background-color: white; /* White background */
-    color: black; /* Black text */
+    background-color: white;
+    color: black;
     line-height: 1.6;
 }
 
 header {
-    background-color: #FF6600; /* Orange header */
+    background-color: #FF6600; /* Orange */
     color: white;
     padding: 20px;
     text-align: center;
@@ -37,16 +37,16 @@ nav a:hover {
 section {
     padding: 20px;
     margin: 20px 0;
-    background-color: #FFCC00; /* Yellow background for sections */
-    color: black; /* Black text inside sections */
+    background-color: #FFCC00; /* Yellow */
+    color: black;
 }
 
 h2 {
-    color: #FF6600; /* Orange color for headings */
+    color: #FF6600; /* Orange */
 }
 
 footer {
-    background-color: #FF6600; /* Orange footer */
+    background-color: #FF6600; /* Orange */
     color: white;
     text-align: center;
     padding: 10px;
