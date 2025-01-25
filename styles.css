@@ -1,4 +1,7 @@
-/* General page setup */
+/* Applying Vesper Libre font for headers */
+@import url('https://fonts.googleapis.com/css2?family=Vesper+Libre:wght@400;700&display=swap');
+
+/* Body styles */
 body {
     font-family: 'Vesper Libre', serif;
     background-color: white;
@@ -10,50 +13,61 @@ body {
 /* Header styles */
 header {
     background-color: orange;
-    color: white;
-    padding: 10px 0;
+    padding: 20px;
     text-align: center;
+    color: white;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 36px;
+    font-family: 'Vesper Libre', serif;
+    font-weight: 700;
 }
 
-/* Navigation styles */
-nav a {
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
     color: white;
+    margin: 0 15px;
     text-decoration: none;
-    padding: 10px;
-    margin: 0 10px;
+    font-weight: 400;
 }
 
-nav a:hover {
-    background-color: darkorange;
+header nav a:hover {
+    text-decoration: underline;
 }
 
-/* Debate section styles */
-section#debate {
+.flag-container {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Main section styles */
+section {
     padding: 20px;
-    margin: 20px;
-    background-color: #f8f8f8;
 }
 
-section#debate h2 {
+h2, h3 {
+    font-family: 'Vesper Libre', serif;
     color: orange;
 }
 
-section#debate p {
-    line-height: 1.6;
+/* Links styling */
+a {
+    color: orange;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* Footer styles */
 footer {
-    background-color: orange;
+    background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 15px;
+    margin-top: 20px;
 }
