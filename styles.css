@@ -1,44 +1,55 @@
-/* General body styling */
+/* General page setup */
 body {
-    font-family: 'Vesper Libre', serif;
-    background-color: white; /* White background */
-    color: black;  /* Default text color (black) for readability */
+    font-family: Vesper Libre, sans-serif;
+    background-color: white;  /* White background */
+    color: black;             /* Black text color */
+    margin: 0;
+    padding: 0;
 }
 
-/* Header styling */
+/* Header styles */
 header {
-    background-color: #FFA500; /* Orange background */
-    color: white; /* White text color */
-    padding: 1rem;
+    background-color: orange; /* Orange header */
+    color: white;              /* White text in the header */
+    padding: 10px 0;
     text-align: center;
 }
 
-/* Navigation link styling */
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* Navigation styles */
 nav a {
-    color: #FFA500; /* Orange color for links */
+    color: white;              /* White text for links */
     text-decoration: none;
-    padding: 0.5rem;
-    margin: 0.5rem;
+    padding: 10px;
+    margin: 0 10px;
 }
 
 nav a:hover {
-    background-color: white; /* White background on hover */
-    color: #FFA500; /* Orange color on hover */
+    background-color: darkorange; /* Hover effect with darker orange */
 }
 
-/* Section styling */
+/* Section styles */
 section {
     padding: 20px;
-    margin: 10px;
-    background-color: white; /* White background for sections */
-    border: 2px solid #FFA500; /* Orange border */
-    border-radius: 5px;
+    margin: 20px;
+    background-color: #f8f8f8; /* Light grey background for sections */
 }
 
-/* Footer styling */
+section h2 {
+    color: orange;             /* Orange color for section headings */
+}
+
+/* Footer styles */
 footer {
+    background-color: orange;  /* Orange footer */
+    color: white;              /* White text in the footer */
     text-align: center;
-    padding: 10px;
-    background-color: #FFA500; /* Orange footer background */
-    color: white; /* White text in footer */
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
