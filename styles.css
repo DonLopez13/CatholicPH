@@ -1,97 +1,66 @@
-/* General Styles */
+/* General Styling */
 body {
-    font-family: 'Vesper Libre', serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
+    background: linear-gradient(to bottom, orange, yellow, white);
     color: black;
 }
 
-/* Containers */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Header */
+/* Header Styling */
 header {
     background-color: orange;
     color: white;
-    padding: 20px 0;
+    padding: 10px 20px;
     text-align: center;
-    border-bottom: 4px solid yellow;
+    border-bottom: 3px solid yellow;
 }
 
 header h1 {
-    font-size: 2.5rem;
     margin: 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+nav {
+    margin-top: 10px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
+    margin: 0 10px;
     font-weight: bold;
-    margin: 0 15px;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
 
-/* Section Backgrounds */
-.orange-bg {
-    background-color: orange;
-    color: white;
+/* Section Styling */
+main {
     padding: 20px;
-    border-radius: 8px;
 }
 
-.yellow-bg {
-    background-color: yellow;
-    color: black;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.white-bg {
-    background-color: white;
-    color: black;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Section Headings */
-main h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-}
-
-main p {
-    line-height: 1.6;
-}
-
-/* Buttons */
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: orange;
-    color: white;
-    font-weight: bold;
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid orange;
+    background: white;
     border-radius: 5px;
-    text-decoration: none;
 }
 
-.button:hover {
-    background-color: darkorange;
+section h2 {
+    color: orange;
+    margin-bottom: 10px;
 }
 
-/* Footer */
+/* Footer Styling */
 footer {
-    background-color: yellow;
+    background-color: orange;
+    color: white;
     text-align: center;
     padding: 10px 0;
-    color: black;
-    margin-top: 20px;
+    border-top: 3px solid yellow;
 }
