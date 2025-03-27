@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article 1 - Catholic Information Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Understanding the Catholic Faith</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#history">Historical Foundations</a></li>
+                <li><a href="#teachings">Core Teachings</a></li>
+                <li><a href="#modern-issues">Catholicism in the Modern World</a></li>
+                <li><a href="#conclusion">Conclusion</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>The Catholic Church is one of the oldest religious institutions in the world, with over a billion followers worldwide. It has played a significant role in shaping history, culture, and spirituality for over two millennia. This article explores the foundations of the Catholic faith, its key teachings, and its relevance in today's world.</p>
+        </section>
+
+        <section id="history">
+            <h2>Historical Foundations</h2>
+            <p>Christianity traces its roots back to Jesus Christ, who, according to Catholic belief, is the Son of God. The early Church was built upon the teachings of Christ and His apostles, particularly St. Peter, who is considered the first pope. Over the centuries, the Church has endured challenges, including persecution, schisms, and reformations, yet it has remained a central institution in global history.</p>
+            <p>Some key historical milestones include:</p>
+            <ul>
+                <li>The Great Schism of 1054, which divided Christianity into Roman Catholicism and Eastern Orthodoxy.</li>
+                <li>The Protestant Reformation of the 16th century, which led to significant changes in Christian theology and Church authority.</li>
+                <li>The Second Vatican Council (1962–1965), which modernized aspects of Catholic worship and engagement with the world.</li>
+            </ul>
+        </section>
+
+        <section id="teachings">
+            <h2>Core Teachings of the Catholic Church</h2>
+            <p>The Catholic faith is built upon several key doctrines, including:</p>
+            <ul>
+                <li><strong>The Trinity:</strong> The belief in one God in three persons: the Father, the Son, and the Holy Spirit.</li>
+                <li><strong>The Sacraments:</strong> The seven sacraments, including Baptism, Eucharist, and Confirmation, are essential for spiritual life.</li>
+                <li><strong>Mary and the Saints:</strong> Catholics honor Mary, the Mother of Jesus, and other saints as models of holiness and intercessors before God.</li>
+                <li><strong>The Authority of the Pope:</strong> As the successor of St. Peter, the pope leads the Church with apostolic authority.</li>
+                <li><strong>Salvation and Grace:</strong> Salvation comes through faith, good works, and the grace of God.</li>
+            </ul>
+        </section>
+
+        <section id="modern-issues">
+            <h2>Catholicism in the Modern World</h2>
+            <p>The Catholic Church continues to address contemporary issues while holding onto its core beliefs. Some key areas of discussion include:</p>
+            <ul>
+                <li><strong>Social Justice:</strong> The Church advocates for the dignity of human life, care for the poor, and ethical economic systems.</li>
+                <li><strong>Science and Faith:</strong> Catholicism supports scientific inquiry, as seen in figures like St. Thomas Aquinas and the Vatican Observatory.</li>
+                <li><strong>Morality and Ethics:</strong> Issues such as bioethics, abortion, and marriage continue to be major discussions within the Church.</li>
+                <li><strong>Interfaith Dialogue:</strong> The Church promotes unity and dialogue with other religious traditions.</li>
+            </ul>
+        </section>
+
+        <section id="conclusion">
+            <h2>Conclusion</h2>
+            <p>The Catholic Church has a deep and complex history, rich in tradition, theological depth, and a mission to serve humanity. Whether through its teachings, charitable works, or moral guidance, it remains a significant force in the modern world. Understanding its foundations and evolution helps believers and non-believers alike appreciate its role in society.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Catholic Information Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>

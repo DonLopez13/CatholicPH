@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catholic Information Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Catholic Information Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#saints">Saints</a></li>
+                <li><a href="#catechism">Catechism</a></li>
+                <li><a href="#debates">Debates</a></li>
+                <li><a href="#articles">Articles</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home">
+            <h2>Welcome</h2>
+            <p>Explore the rich history, teachings, and discussions of the Catholic Church.</p>
+        </section>
+        
+        <section id="saints">
+            <h2>Saints</h2>
+            <p>Learn about the lives and miracles of Catholic saints.</p>
+        </section>
+        
+        <section id="catechism">
+            <h2>Catechism</h2>
+            <p>Deepen your faith with Catholic teachings and doctrine.</p>
+        </section>
+        
+        <section id="debates">
+            <h2>Debates</h2>
+            <p>Engage in theological discussions and explore different viewpoints.</p>
+        </section>
+        
+        <section id="articles">
+            <h2>Articles</h2>
+            <p>Read insightful articles on Catholicism and modern issues.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Catholic Information Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
