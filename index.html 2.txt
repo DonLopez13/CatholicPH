@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catholic Information Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Catholic Information Hub</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="hero">
+            <h2>Welcome to Catholic Information Hub</h2>
+            <p>Discover the beauty of the Catholic faith, its teachings, and its impact on the modern world.</p>
+            <a href="articles.html" class="button">Explore Articles</a>
+        </section>
+
+        <section id="latest-articles">
+            <h2>Latest Articles</h2>
+            <article>
+                <h3>Saint Carlo Acutis: The Cyber Apostle</h3>
+                <p>A modern saint who used technology to spread the Gospel.</p>
+                <a href="article1.html" class="read-more">Read More</a>
+            </article>
+            <article>
+                <h3>The Role of the Vatican in the 21st Century</h3>
+                <p>Understanding the Church's mission in modern society.</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Catholic Information Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
