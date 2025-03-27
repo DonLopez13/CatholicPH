@@ -1,66 +1,51 @@
-/* General Styling */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    background: linear-gradient(to bottom, orange, yellow, white);
-    color: black;
 }
 
-/* Header Styling */
 header {
-    background-color: orange;
+    background-color: #8B0000;
     color: white;
-    padding: 10px 20px;
+    padding: 1rem;
     text-align: center;
-    border-bottom: 3px solid yellow;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2em;
-    font-weight: bold;
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
 }
 
-nav {
-    margin-top: 10px;
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-nav a {
+nav ul li a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Section Styling */
 main {
+    max-width: 800px;
+    margin: 20px auto;
     padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 section {
     margin-bottom: 20px;
-    padding: 15px;
-    border: 1px solid orange;
-    background: white;
-    border-radius: 5px;
 }
 
-section h2 {
-    color: orange;
-    margin-bottom: 10px;
-}
-
-/* Footer Styling */
 footer {
-    background-color: orange;
-    color: white;
     text-align: center;
-    padding: 10px 0;
-    border-top: 3px solid yellow;
+    padding: 10px;
+    background: #8B0000;
+    color: white;
+    margin-top: 20px;
 }
