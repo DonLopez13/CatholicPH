@@ -1,127 +1,66 @@
-/* Reset some basic styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa; /* Light background */
-    color: #333;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Header styles */
 header {
-    background-color: #9c1f2a; /* Vatican Red */
-    color: #fff;
+    background-color: #003366; /* Vatican Blue */
+    color: white;
+    padding: 20px;
     text-align: center;
-    padding: 20px 0;
 }
 
-header h1 {
-    font-size: 3rem;
-    margin: 0;
+h1 {
+    font-size: 2.5em;
 }
 
 nav {
-    background-color: #3e6b8d; /* Vatican Blue */
-    padding: 10px 0;
+    background-color: #0077cc; /* Vatican Yellow */
     text-align: center;
+    padding: 10px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    padding: 12px 20px;
-    margin: 0 15px;
-    font-size: 1.1rem;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1.2em;
 }
 
 nav a:hover {
-    background-color: #fff;
-    color: #333;
+    background-color: #005fa3;
     border-radius: 5px;
 }
 
-/* Main content area */
 main {
-    padding: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    margin: 20px 0;
 }
 
 h2 {
-    color: #9c1f2a;
-    font-size: 2rem;
-    margin-bottom: 20px;
+    color: #003366;
+    font-size: 2em;
 }
 
-/* Section styles */
-section {
-    margin-bottom: 30px;
-}
-
-/* Search bar styles */
-.search-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
-.search-container input {
-    width: 100%;
-    max-width: 600px;
-    padding: 10px;
-    border: 2px solid #333;
-    border-radius: 5px;
-    font-size: 1.1rem;
-}
-
-.search-container button {
-    background-color: #9c1f2a;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    margin-left: 10px;
-    cursor: pointer;
-}
-
-.search-container button:hover {
-    background-color: #3e6b8d;
-}
-
-/* Footer styles */
 footer {
-    background-color: #3e6b8d;
+    background-color: #003366;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px;
     position: fixed;
-    bottom: 0;
     width: 100%;
+    bottom: 0;
 }
 
 footer p {
     margin: 0;
-    font-size: 1rem;
-}
-
-/* Responsive styles */
-@media screen and (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    nav a {
-        font-size: 1rem;
-        padding: 8px 12px;
-    }
-
-    .search-container input {
-        font-size: 1rem;
-        padding: 8px;
-    }
 }
