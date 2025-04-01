@@ -1,66 +1,96 @@
-/* General Styles */
+/* General Body Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #FFFFFF;  /* White */
+    color: #333333;  /* Dark Gray */
 }
 
+/* Header Styles */
 header {
-    background-color: #003366; /* Vatican Blue */
-    color: white;
+    background-color: #FFD700;  /* Vatican Yellow */
+    color: #333333;  /* Dark Gray text */
     padding: 20px;
     text-align: center;
 }
 
-h1 {
-    font-size: 2.5em;
-}
-
+/* Navigation Bar Styles */
 nav {
-    background-color: #0077cc; /* Vatican Yellow */
-    text-align: center;
-    padding: 10px;
+    background-color: #FFD700;  /* Vatican Yellow */
+    color: #333333;  /* Dark Gray text */
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
 }
 
 nav a {
-    color: white;
     text-decoration: none;
-    padding: 10px 20px;
-    margin: 0 10px;
-    font-size: 1.2em;
+    color: #333333;  /* Dark Gray */
+    padding: 10px;
 }
 
 nav a:hover {
-    background-color: #005fa3;
-    border-radius: 5px;
+    color: #FFB800;  /* Darker Yellow for hover */
 }
 
+/* Main Content Styles */
 main {
-    padding: 20px;
-    text-align: center;
+    background-color: #FFFFFF;  /* White */
+    padding: 40px;
 }
 
+/* Section Styles */
 section {
-    margin: 20px 0;
+    margin-bottom: 30px;
 }
 
-h2 {
-    color: #003366;
-    font-size: 2em;
+section h2 {
+    color: #333333;  /* Dark Gray for section titles */
+    font-size: 24px;
 }
 
+/* Footer Styles */
 footer {
-    background-color: #003366;
-    color: white;
+    background-color: #FFFAF0;  /* Light Gold */
+    color: #333333;  /* Dark Gray text */
     text-align: center;
     padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }
 
-footer p {
-    margin: 0;
+/* Button Styles */
+button {
+    background-color: #FFD700;  /* Golden Yellow */
+    color: #FFFFFF;  /* White text */
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #FFB800;  /* Darker Yellow for hover */
+}
+
+/* Link Styles */
+a {
+    color: #333333;  /* Dark Gray for links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFD700;  /* Golden Yellow for hover */
+}
+
+/* Form Input Styles */
+input, textarea {
+    background-color: #FFFFFF;  /* White */
+    border: 1px solid #CCCCCC;  /* Light Gray border */
+    padding: 10px;
+    font-size: 16px;
+}
+
+input:focus, textarea:focus {
+    border-color: #FFD700;  /* Golden Yellow border on focus */
 }
