@@ -1,0 +1,152 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+    color: #4B0082; /* Deep Purple */
+}
+
+a {
+    color: #4B0082; /* Deep Purple */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: #4B0082; /* Deep Purple */
+    padding: 20px 0;
+}
+
+header .logo h1 {
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+header nav ul li input {
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+}
+
+.hero {
+    background-color: #FFD700; /* Gold */
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    color: #4B0082; /* Deep Purple */
+}
+
+#intro {
+    padding: 40px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#debates, #saints, #about, #contact {
+    padding: 40px 0;
+}
+
+#debates article, .saints-grid .saint {
+    margin-bottom: 20px;
+}
+
+#debates article h3, .saint h3 {
+    font-size: 1.8rem;
+    color: #4B0082;
+}
+
+.saints-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.saint img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #4B0082;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Button styles */
+button {
+    background-color: #4B0082;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FFD700; /* Gold */
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .saints-grid {
+        grid-template-columns: 1fr;
+    }
+}
