@@ -1,5 +1,5 @@
-// Initialize EmailJS with your User ID
-emailjs.init("YOUR_USER_ID");  // Replace with your actual EmailJS User ID
+// Initialize EmailJS with your User ID (Public Key)
+emailjs.init("O99s-O6m1ns7qYzgd");
 
 document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();  // Prevent default form submission
