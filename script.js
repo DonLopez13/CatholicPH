@@ -1,22 +1,31 @@
-// Initialize EmailJS with your User ID (Public Key)
-emailjs.init("O99s-O6m1ns7qYzgd");
+document.addEventListener("DOMContentLoaded", function () {
+    const popupContainer = document.getElementById("popup-container");
+    const searchBar = document.getElementById("search-bar");
 
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();  // Prevent default form submission
+    // Close popup when clicking outside the box
+    popupContainer.addEventListener("click", function (event) {
+        if (event.target.id === "popup-container") {
+            popupContainer.style.display = "none";
+        }
+    });
 
-    // Get form values
-    const name = document.getElementById('user_name').value;
-    const email = document.getElementById('user_email').value;
-    const message = document.getElementById('message').value;
+    // Hide popup when clicking the "Continue Without Account" button
+    document.getElementById("continue-btn").addEventListener("click", function () {
+        popupContainer.style.display = "none";
+    });
 
-    // Send email using EmailJS
-    emailjs.send("service_4b01g8g", "template_pjz9pnz", {
-        name: name,     
-        email: email,   
-        message: message  
-    }).then(function(response) {
-        alert('Message sent successfully!');
-    }, function(error) {
-        alert('Failed to send message: ' + error.text);
+    // Search functionality (basic filtering example)
+    searchBar.addEventListener("input", function () {
+        let query = searchBar.value.toLowerCase();
+        let articles = document.querySelectorAll(".article");
+        
+        articles.forEach(article => {
+            let text = article.textContent.toLowerCase();
+            if (text.includes(query)) {
+                article.style.display = "block";
+            } else {
+                article.style.display = "none";
+            }
+        });
     });
 });
