@@ -4,41 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saints - CatholicPH</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Saints</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="saints.html">Saints</a></li>
+                <li><a href="debates.html">Debates</a></li>
+                <li><a href="catechism.html">Catechism</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><input type="text" id="search-bar" placeholder="Search..."></li>
+            </ul>
+        </nav>
     </header>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="saints.html">Saints</a>
-        <a href="debates.html">Debates</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-
+    
     <main>
-        <section>
-            <h2>Saint Thomas Aquinas</h2>
-            <a href="thomas_aquinas.html">Read More</a>
+        <section id="saints-intro">
+            <h1>Saints of the Catholic Church</h1>
+            <p>Explore the lives of saints who have shaped the Church through their faith, sacrifice, and teachings. Learn about their virtues and how we can emulate their example.</p>
         </section>
 
-        <section>
-            <h2>Saint Augustine</h2>
-            <a href="augustine.html">Read More</a>
+        <section id="saints-list">
+            <article>
+                <h2><a href="saints/st-thomas-aquinas.html">St. Thomas Aquinas</a></h2>
+                <p>A great philosopher and theologian who contributed significantly to Catholic doctrine, especially through his work on the Summa Theologica.</p>
+            </article>
+            <article>
+                <h2><a href="saints/st-francis-assisi.html">St. Francis of Assisi</a></h2>
+                <p>Known for his deep love of nature and poverty, St. Francis founded the Franciscan Order and is a patron saint of animals and the environment.</p>
+            </article>
+            <article>
+                <h2><a href="saints/st-padre-pio.html">St. Padre Pio</a></h2>
+                <p>A beloved modern saint known for his stigmata, piety, and dedication to the Sacrament of Confession, helping many to grow closer to Christ.</p>
+            </article>
+            <article>
+                <h2><a href="saints/st-augustine.html">St. Augustine</a></h2>
+                <p>One of the Church’s greatest theologians and philosophers, St. Augustine’s writings have had a lasting impact on Christian thought, especially regarding grace and salvation.</p>
+            </article>
         </section>
-
-        <section>
-            <h2>Saint Francis of Assisi</h2>
-            <a href="francis_assisi.html">Read More</a>
-        </section>
-
-        <!-- Add more saints here -->
     </main>
-
+    
     <footer>
-        <p>&copy; 2025 CatholicPH. All Rights Reserved.</p>
+        <p>&copy; 2025 CatholicPH. All rights reserved.</p>
+        <p>Contact: <a href="mailto:donvitoreyes68@gmail.com">donvitoreyes68@gmail.com</a></p>
     </footer>
 </body>
 </html>
