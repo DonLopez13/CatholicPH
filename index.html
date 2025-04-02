@@ -3,30 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CatholicPH - Home</title>
-    <link rel="stylesheet" href="style.css">
+    <title>CatholicPH</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>CatholicPH</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="saints.html">Saints</a></li>
+                <li><a href="debates.html">Debates</a></li>
+                <li><a href="catechism.html">Catechism</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><input type="text" id="search-bar" placeholder="Search..."></li>
+            </ul>
+        </nav>
     </header>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="saints.html">Saints</a>
-        <a href="debates.html">Debates</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-
+    
     <main>
-        <section>
-            <h2>Welcome to CatholicPH</h2>
-            <p>Here we share information about the Catholic Church, Saints, and much more.</p>
+        <section id="welcome">
+            <h1>Welcome to CatholicPH</h1>
+            <p>Sharing knowledge on Church history, saints, debates, and catechism.</p>
+        </section>
+        
+        <section id="featured">
+            <h2>Featured Articles</h2>
+            <article>
+                <h3><a href="saints/st-thomas-aquinas.html">St. Thomas Aquinas</a></h3>
+                <p>Learn about the philosopher and theologian who shaped Catholic doctrine.</p>
+            </article>
+            <article>
+                <h3><a href="debates/sola-scriptura.html">Refuting Sola Scriptura</a></h3>
+                <p>A Catholic perspective on the Protestant doctrine of Scripture alone.</p>
+            </article>
         </section>
     </main>
-
+    
     <footer>
-        <p>&copy; 2025 CatholicPH. All Rights Reserved.</p>
+        <p>&copy; 2025 CatholicPH. All rights reserved.</p>
+        <p>Contact: <a href="mailto:donvitoreyes68@gmail.com">donvitoreyes68@gmail.com</a></p>
     </footer>
 </body>
 </html>
