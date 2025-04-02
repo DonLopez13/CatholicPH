@@ -1,138 +1,154 @@
-/* General Styles */
+/* General Body Styling */
 body {
     font-family: Arial, sans-serif;
+    background-color: #ffffff; /* White background for a clean, classic look */
+    color: #333333; /* Dark gray text for readability */
     margin: 0;
     padding: 0;
-    background-color: #f0e5d8; /* Soft beige background for a subtle effect */
 }
 
+/* Header Styling */
 header {
-    background-color: #003b5c; /* Dark Vatican Blue */
-    color: #d4af37; /* Vatican Gold */
+    background-color: #f1c40f; /* Gold background color */
+    color: #ffffff; /* White text */
     padding: 20px 0;
     text-align: center;
 }
 
 header h1 {
+    font-size: 2.5em;
     margin: 0;
-    font-size: 36px;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    display: inline-block;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #d4af37; /* Vatican Gold */
+    color: #ffffff;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 1.2em;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #f39c12; /* Lighter yellow on hover */
 }
 
-/* Main Section */
+/* Main Content Styling */
 main {
     padding: 20px;
+    background-color: #f8f8f8; /* Light background for readability */
+}
+
+section {
+    margin-bottom: 40px;
 }
 
 h2 {
-    color: #003b5c; /* Dark Vatican Blue */
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
+    color: #f39c12; /* Lighter yellow for section headings */
+    font-size: 1.8em;
     margin-bottom: 10px;
 }
 
-ul li a {
-    text-decoration: none;
-    color: #003b5c; /* Dark Vatican Blue */
-    font-size: 18px;
-}
-
-ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Search Bar */
-.search-container {
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
     margin-bottom: 20px;
-    text-align: center;
 }
 
-.search-container input[type="text"] {
-    padding: 10px;
-    width: 80%;
-    font-size: 16px;
-    margin-right: 10px;
-    border: 2px solid #003b5c;
-    border-radius: 5px;
-}
-
-.search-container button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #d4af37;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.search-container button:hover {
-    background-color: #f1c27d; /* Light gold for hover effect */
-}
-
-/* Sign Up / Log In Form */
-form {
-    margin: 20px 0;
-    text-align: center;
-}
-
-form input[type="text"], form input[type="password"] {
-    padding: 10px;
-    width: 80%;
-    font-size: 16px;
-    margin-bottom: 10px;
-    border: 2px solid #003b5c;
-    border-radius: 5px;
-}
-
-form button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #d4af37;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #f1c27d; /* Light gold for hover effect */
-}
-
-/* Footer */
+/* Footer Styling */
 footer {
+    background-color: #333333; /* Dark gray for footer */
+    color: #ffffff;
     text-align: center;
-    padding: 10px;
-    background-color: #003b5c; /* Dark Vatican Blue */
-    color: #d4af37; /* Vatican Gold */
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 15px;
 }
 
 footer p {
     margin: 0;
+    font-size: 1em;
+}
+
+/* Button Styling (for forms or links) */
+button, .btn {
+    background-color: #f39c12; /* Light yellow button */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #e67e22; /* Slightly darker yellow on hover */
+}
+
+/* Footer Links */
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #f39c12;
+}
+
+/* Additional Styling for Pop-up (Sign-up / Login) */
+#popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    padding: 20px;
+}
+
+#popup .popup-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+#popup .popup-content h2 {
+    color: #f39c12;
+}
+
+#popup .popup-content input {
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    border: 1px solid #f39c12;
+    border-radius: 5px;
+}
+
+#popup .popup-content button {
+    margin-top: 20px;
+}
+
+/* Overlay to close pop-up when clicking outside */
+#popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
 }
