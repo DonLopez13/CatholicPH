@@ -4,33 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Debates - CatholicPH</title>
-    <link rel="stylesheet" href="style.css"> <!-- Correct link to CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Debates</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="saints.html">Saints</a></li>
+                <li><a href="debates.html">Debates</a></li>
+                <li><a href="catechism.html">Catechism</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><input type="text" id="search-bar" placeholder="Search..."></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="saints.html">Saints</a>
-        <a href="debates.html">Debates</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+    
     <main>
-        <section>
-            <h2>Sola Scriptura Debate</h2>
-            <p>In this debate, we examine the Catholic Church's position on sola scriptura, refuting this belief from a Catholic perspective using scripture and tradition.</p>
+        <section id="debates-intro">
+            <h1>Popular Debates in Catholicism</h1>
+            <p>Explore common debates and learn why the Catholic Church believes what it does. We provide thorough answers to questions like "Is sola scriptura biblical?"</p>
         </section>
-        <section>
-            <h2>Faith vs. Works Debate</h2>
-            <p>We discuss the Catholic teaching on salvation, where both faith and works are necessary, and respond to the Protestant belief in salvation by faith alone.</p>
+
+        <section id="debates-list">
+            <article>
+                <h2><a href="debates/sola-scriptura.html">Refuting Sola Scriptura</a></h2>
+                <p>This debate addresses the Protestant doctrine of "scripture alone" and why the Catholic Church believes in the authority of Sacred Tradition and the Magisterium alongside Scripture.</p>
+            </article>
+            <article>
+                <h2><a href="debates/pope-authority.html">The Authority of the Pope</a></h2>
+                <p>Learn about the role of the Pope as the leader of the Catholic Church and why Catholics believe in his authority based on Scripture and Tradition.</p>
+            </article>
+            <article>
+                <h2><a href="debates/mary.html">The Role of Mary in Salvation</a></h2>
+                <p>Why do Catholics honor Mary? This debate explains the Catholic understanding of Mary's role in salvation history and her intercessory power.</p>
+            </article>
         </section>
     </main>
+    
     <footer>
-        <p>&copy; 2025 CatholicPH. All Rights Reserved.</p>
+        <p>&copy; 2025 CatholicPH. All rights reserved.</p>
+        <p>Contact: <a href="mailto:donvitoreyes68@gmail.com">donvitoreyes68@gmail.com</a></p>
     </footer>
-
-    <!-- Include the corrected script -->
-    <script src="script.js"></script>
 </body>
 </html>
