@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Debates - CatholicPH</title>
+    <title>CatholicPH - Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Debates</h1>
+        <h1>CatholicPH</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -20,20 +20,32 @@
     </header>
 
     <main>
-        <section>
-            <h2>Debates on Catholic Doctrine</h2>
-            <ul>
-                <li><a href="debate_1.html">The Authority of Scripture vs. The Authority of the Church</a></li>
-                <li><a href="debate_2.html">The Eucharist - Symbol or Reality?</a></li>
-                <li><a href="debate_3.html">The Role of Mary - Mother of God or Just a Woman?</a></li>
-                <li><a href="debate_4.html">Salvation - Faith Alone or Faith and Works?</a></li>
-                <li><a href="debate_5.html">The Papacy - Authority of the Pope</a></li>
-            </ul>
-        </section>
+        <h2>Welcome to CatholicPH</h2>
+        <p>Your resource for learning about Catholic doctrine, saints, and important debates.</p>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search articles, debates, saints..." />
+            <button onclick="searchFunction()">Search</button>
+        </div>
+
+        <!-- Log In / Sign Up Links -->
+        <div class="login-signup">
+            <p>Already have an account? <a href="login.html">Log in</a></p>
+            <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+        </div>
     </main>
 
     <footer>
         <p>&copy; 2025 CatholicPH. All rights reserved.</p>
     </footer>
+
+    <script>
+        function searchFunction() {
+            // Basic search functionality (for now, just alerts the user input)
+            var input = document.getElementById("searchInput").value;
+            alert("Searching for: " + input);
+        }
+    </script>
 </body>
 </html>
