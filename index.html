@@ -3,49 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CatholicPH - Home</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Welcome to CatholicPH</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>CatholicPH</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="saints.html">Saints</a></li>
-                <li><a href="debates.html">Debates</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Welcome to CatholicPH</h1>
+        <p>Exploring the rich history, saints, and teachings of the Catholic Church.</p>
     </header>
-
+    
+    <nav>
+        <ul>
+            <li><a href="saints.html">Saints</a></li>
+            <li><a href="debates.html">Debates</a></li>
+            <li><a href="catechism.html">Catechism</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
     <main>
-        <h2>Welcome to CatholicPH</h2>
-        <p>Your resource for learning about Catholic doctrine, saints, and important debates.</p>
-
-        <!-- Search Bar -->
-        <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Search articles, debates, saints..." />
-            <button onclick="searchFunction()">Search</button>
-        </div>
-
-        <!-- Log In / Sign Up Links -->
-        <div class="login-signup">
-            <p>Already have an account? <a href="login.html">Log in</a></p>
-            <p>Don't have an account? <a href="signup.html">Sign up</a></p>
-        </div>
+        <section>
+            <h2>About CatholicPH</h2>
+            <p>CatholicPH is dedicated to sharing in-depth articles on saints, Catholic debates, and theological discussions.</p>
+        </section>
     </main>
-
+    
     <footer>
-        <p>&copy; 2025 CatholicPH. All rights reserved.</p>
+        <p>&copy; 2025 CatholicPH | All Rights Reserved</p>
     </footer>
-
-    <script>
-        function searchFunction() {
-            // Basic search functionality (for now, just alerts the user input)
-            var input = document.getElementById("searchInput").value;
-            alert("Searching for: " + input);
-        }
-    </script>
 </body>
 </html>
