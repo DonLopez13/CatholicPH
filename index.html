@@ -5,43 +5,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CatholicPH</title>
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+
+    <script>
+        // Firebase configuration
+        const firebaseConfig = {
+            apiKey: "YOUR_API_KEY",
+            authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+            projectId: "YOUR_PROJECT_ID",
+            storageBucket: "YOUR_PROJECT_ID.appspot.com",
+            messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+            appId: "YOUR_APP_ID"
+        };
+
+        // Initialize Firebase
+        const app = firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+
+        // Sign Up Function
+        function signUp() {
+            const email = document.getElementById('signup-email').value;
+            const password = document.getElementById('signup-password').value;
+
+            auth.createUserWithEmailAndPassword(email, password)
+                .then(userCredential => {
+                    const user = userCredential.user;
+                    alert('Sign Up Successful');
+                    showLogout();
+                })
+                .catch(error => {
+                    alert(error.message);
+                });
+        }
+
+        // Log In Function
+        function logIn() {
+            const email = document.getElementById('login-email').value;
+            const password = document.getElementById('login-password').value;
+
+            auth.signInWithEmailAndPassword(email, password)
+                .then(userCredential => {
+                    const user = userCredential.user;
+                    alert('Log In Successful');
+                    showLogout();
+                })
+                .catch(error => {
+                    alert(error.message);
+                });
+        }
+
+        // Log Out Function
+        function logOut() {
+            auth.signOut()
+                .then(() => {
+                    alert('Logged out');
+                    showLogin();
+                });
+        }
+
+        // Show Log Out, Hide Sign Up/Login
+        function showLogout() {
+            document.getElementById('logout').style.display = 'block';
+            document.getElementById('signup').style.display = 'none';
+            document.getElementById('login').style.display = 'none';
+        }
+
+        // Show Sign Up and Log In, Hide Log Out
+        function showLogin() {
+            document.getElementById('logout').style.display = 'none';
+            document.getElementById('signup').style.display = 'block';
+            document.getElementById('login').style.display = 'block';
+        }
+
+        // Check if user is logged in
+        auth.onAuthStateChanged(user => {
+            if (user) {
+                showLogout();
+            } else {
+                showLogin();
+            }
+        });
+    </script>
 </head>
 <body>
+
     <header>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="saints.html">Saints</a></li>
                 <li><a href="debates.html">Debates</a></li>
-                <li><a href="catechism.html">Catechism</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><input type="text" id="search-bar" placeholder="Search..."></li>
             </ul>
         </nav>
     </header>
-    
+
     <main>
-        <section id="welcome">
-            <h1>Welcome to CatholicPH</h1>
-            <p>Sharing knowledge on Church history, saints, debates, and catechism.</p>
-        </section>
-        
-        <section id="featured">
-            <h2>Featured Articles</h2>
+        <!-- Sign Up Form -->
+        <div id="signup">
+            <input type="email" id="signup-email" placeholder="Email">
+            <input type="password" id="signup-password" placeholder="Password">
+            <button onclick="signUp()">Sign Up</button>
+        </div>
+
+        <!-- Log In Form -->
+        <div id="login">
+            <input type="email" id="login-email" placeholder="Email">
+            <input type="password" id="login-password" placeholder="Password">
+            <button onclick="logIn()">Log In</button>
+        </div>
+
+        <!-- Log Out Button -->
+        <button id="logout" onclick="logOut()" style="display: none;">Log Out</button>
+
+        <section id="articles">
             <article>
-                <h3><a href="saints/st-thomas-aquinas.html">St. Thomas Aquinas</a></h3>
-                <p>Learn about the philosopher and theologian who shaped Catholic doctrine.</p>
+                <h2>Saint Thomas Aquinas</h2>
+                <p>Saint Thomas Aquinas was a Catholic priest and philosopher...</p>
             </article>
             <article>
-                <h3><a href="debates/sola-scriptura.html">Refuting Sola Scriptura</a></h3>
-                <p>A Catholic perspective on the Protestant doctrine of Scripture alone.</p>
+                <h2>Saint Dominic de Guzman</h2>
+                <p>Saint Dominic founded the Dominican Order...</p>
             </article>
+            <article>
+                <h2>Saint Carlo Acutis</h2>
+                <p>Saint Carlo Acutis is known for his deep devotion to the Eucharist...</p>
+            </article>
+            <!-- Add more articles here -->
         </section>
     </main>
-    
+
     <footer>
-        <p>&copy; 2025 CatholicPH. All rights reserved.</p>
-        <p>Contact: <a href="mailto:donvitoreyes68@gmail.com">donvitoreyes68@gmail.com</a></p>
+        <p>&copy; 2025 CatholicPH. All Rights Reserved.</p>
     </footer>
+
+    <!-- Search Bar Script -->
+    <script>
+        // Function to handle the search
+        function searchContent() {
+            const query = document.getElementById('search-bar').value.toLowerCase();
+            const articles = document.querySelectorAll('article');
+            articles.forEach(article => {
+                const text = article.textContent.toLowerCase();
+                if (text.includes(query)) {
+                    article.style.display = 'block';
+                } else {
+                    article.style.display = 'none';
+                }
+            });
+        }
+
+        // Add event listener to the search bar
+        document.getElementById('search-bar').addEventListener('input', searchContent);
+    </script>
+
 </body>
 </html>
